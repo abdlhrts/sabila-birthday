@@ -38,6 +38,7 @@
         border-radius: 25px;
         max-width: 420px;
         box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+        <button> onclick="playMusic()" Putar Lagu<button>
       }
 
       h1 {
@@ -85,7 +86,7 @@
   <body>
     <!-- MUSIC -->
     <audio id="music" loop>
-      <source src="Hindia - everything u are.mpeg" type="audio/mpeg" />
+      <source src="Hindia - everything u are.mp3.mp3" type="audio/mpeg" />
     </audio>
 
     <div class="card">
@@ -139,7 +140,16 @@
       function openLetter() {
         document.getElementById("letter").style.display = "block";
       }
+      function playMusic() {
+        const music = document.getElementById("music");
+        music.play();
+      }
+      function openLetter() {
+        document.getElementById("letter").style.display = "block";
+        document.getElementById("music").play();
+      }
     </script>
   </body>
 </html>
+
 
